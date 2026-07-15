@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aniket Ghosh | Senior QA Engineer Portfolio</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0f19'/%3E%3Cpath d='M8 16l6 6 10-12' stroke='%2300f0ff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
@@ -29,19 +30,10 @@
         }
     </script>
     <style>
-        /* Advanced Custom Header Glow */
-        @keyframes glow {
-            from { text-shadow: 0 0 4px rgba(0, 240, 255, 0.4); }
-            to { text-shadow: 0 0 12px rgba(0, 240, 255, 0.8), 0 0 20px rgba(0, 240, 255, 0.4); }
-        }
-        .animate-glow-text {
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-        /* Custom subtle cyber grid background texture */
+        /* Custom subtle dot pattern background */
         .cyber-grid {
-            background-size: 40px 40px;
-            background-image: linear-gradient(to right, rgba(30, 41, 59, 0.2) 1px, transparent 1px),
-                              linear-gradient(to bottom, rgba(30, 41, 59, 0.2) 1px, transparent 1px);
+            background-size: 28px 28px;
+            background-image: radial-gradient(circle, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
         }
     </style>
 </head>
@@ -64,7 +56,7 @@
                 <span class="text-slate-700">|</span>
                 <a href="tel:+918768947400" class="flex items-center space-x-2 text-slate-300 hover:text-cyber-neonBlue transition-colors">
                     <i data-lucide="phone" class="w-3.5 h-3.5 text-cyber-neonGreen"></i>
-                    <span>+91-87689474000</span>
+                    <span>+91-8768947400</span>
                 </a>
                 <span class="text-slate-700">|</span>
                 <span class="flex items-center space-x-2 text-slate-300 hover:text-cyber-neonBlue transition-colors">
@@ -74,6 +66,10 @@
             </div>
 
             <div class="flex items-center space-x-4">
+                <a href="resume.pdf" target="_blank" class="px-4 py-2 text-xs font-mono font-semibold rounded-md bg-transparent border border-slate-600 text-slate-300 hover:border-slate-400 hover:text-white transition-all duration-300 flex items-center space-x-1.5">
+                    <i data-lucide="download" class="w-3.5 h-3.5"></i>
+                    <span>Resume</span>
+                </a>
                 <a href="#contact" class="px-4 py-2 text-xs font-mono font-semibold rounded-md bg-transparent border border-cyber-neonBlue text-cyber-neonBlue hover:bg-cyber-neonBlue/10 transition-all duration-300 shadow-[0_0_15px_rgba(0,240,255,0.1)] hover:shadow-[0_0_20px_rgba(0,240,255,0.3)]">
                     Get In Touch
                 </a>
@@ -120,7 +116,7 @@
             </div>
 
             <div class="lg:col-span-5">
-                <div class="bg-cyber-card border border-cyber-border rounded-xl shadow-2xl p-5 font-mono text-xs text-slate-300 relative group transition-transform duration-300 hover:scale-[1.01]">
+                <div class="bg-cyber-card border border-cyber-border rounded-xl shadow-2xl p-5 font-mono text-xs text-slate-300 relative">
                     <div class="flex items-center justify-between border-b border-cyber-border pb-3 mb-4">
                         <div class="flex space-x-1.5">
                             <span class="w-3 h-3 rounded-full bg-red-500/80"></span>
@@ -128,8 +124,8 @@
                             <span class="w-3 h-3 rounded-full bg-green-500/80"></span>
                         </div>
                         <div class="flex items-center space-x-2 text-cyber-textMuted text-[10px]">
-                            <i data-lucide="cloud-lightning" class="w-3 h-3 text-cyber-neonBlue"></i>
-                            <span>cloud-ci-orchestrator</span>
+                            <i data-lucide="cloud-lightning" class="w-3 h-3 text-sky-400"></i>
+                            <span>production-pipeline</span>
                         </div>
                     </div>
                     
@@ -138,8 +134,8 @@
                         <!-- Stage 1 -->
                         <div id="stage-1" class="p-2 border border-cyber-border/60 bg-cyber-bg/40 rounded flex items-center justify-between transition-all duration-300">
                             <div class="flex items-center space-x-2">
-                                <div class="stage-icon text-slate-500"><i data-lucide="layers" class="w-3.5 h-3.5"></i></div>
-                                <span class="text-slate-300 font-semibold text-[11px]">Stage 1: Initialize Workers</span>
+                                <div class="stage-icon text-slate-500"><i data-lucide="terminal" class="w-3.5 h-3.5"></i></div>
+                                <span class="text-slate-300 font-semibold text-[11px]">Stage 1: Build</span>
                             </div>
                             <span class="stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">QUEUED</span>
                         </div>
@@ -147,8 +143,8 @@
                         <!-- Stage 2 -->
                         <div id="stage-2" class="p-2 border border-cyber-border/60 bg-cyber-bg/40 rounded flex items-center justify-between transition-all duration-300">
                             <div class="flex items-center space-x-2">
-                                <div class="stage-icon text-slate-500"><i data-lucide="activity" class="w-3.5 h-3.5"></i></div>
-                                <span class="text-slate-300 font-semibold text-[11px]">Stage 2: E2E API Suites</span>
+                                <div class="stage-icon text-slate-500"><i data-lucide="check-square" class="w-3.5 h-3.5"></i></div>
+                                <span class="text-slate-300 font-semibold text-[11px]">Stage 2: Unit & Integration</span>
                             </div>
                             <span class="stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">QUEUED</span>
                         </div>
@@ -156,8 +152,8 @@
                         <!-- Stage 3 -->
                         <div id="stage-3" class="p-2 border border-cyber-border/60 bg-cyber-bg/40 rounded flex items-center justify-between transition-all duration-300">
                             <div class="flex items-center space-x-2">
-                                <div class="stage-icon text-slate-500"><i data-lucide="gauge" class="w-3.5 h-3.5"></i></div>
-                                <span class="text-slate-300 font-semibold text-[11px]">Stage 3: Regression Runtime Gate</span>
+                                <div class="stage-icon text-slate-500"><i data-lucide="play" class="w-3.5 h-3.5"></i></div>
+                                <span class="text-slate-300 font-semibold text-[11px]">Stage 3: E2E</span>
                             </div>
                             <span class="stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">QUEUED</span>
                         </div>
@@ -165,8 +161,17 @@
                         <!-- Stage 4 -->
                         <div id="stage-4" class="p-2 border border-cyber-border/60 bg-cyber-bg/40 rounded flex items-center justify-between transition-all duration-300">
                             <div class="flex items-center space-x-2">
-                                <div class="stage-icon text-slate-500"><i data-lucide="shield-alert" class="w-3.5 h-3.5"></i></div>
-                                <span class="text-slate-300 font-semibold text-[11px]">Stage 4: MobSF Security Gate</span>
+                                <div class="stage-icon text-slate-500"><i data-lucide="shield" class="w-3.5 h-3.5"></i></div>
+                                <span class="text-slate-300 font-semibold text-[11px]">Stage 4: Security</span>
+                            </div>
+                            <span class="stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">QUEUED</span>
+                        </div>
+
+                        <!-- Stage 5 -->
+                        <div id="stage-5" class="p-2 border border-cyber-border/60 bg-cyber-bg/40 rounded flex items-center justify-between transition-all duration-300">
+                            <div class="flex items-center space-x-2">
+                                <div class="stage-icon text-slate-500"><i data-lucide="rocket" class="w-3.5 h-3.5"></i></div>
+                                <span class="text-slate-300 font-semibold text-[11px]">Stage 5: Deploy</span>
                             </div>
                             <span class="stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400">QUEUED</span>
                         </div>
@@ -175,10 +180,16 @@
                         <div id="dashboard-meta" class="pt-2 border-t border-cyber-border/60 flex justify-between items-center text-[10px] text-cyber-textMuted font-mono">
                             <div>PIPELINE: <span id="pipeline-id" class="text-slate-300">#9824-RUN</span></div>
                             <div id="pipeline-duration" class="flex items-center space-x-1">
-                                <i data-lucide="clock" class="w-2.5 h-2.5 text-cyber-neonBlue"></i>
+                                <i data-lucide="clock" class="w-2.5 h-2.5 text-sky-400"></i>
                                 <span>Elapsed: 0.00s</span>
                             </div>
                         </div>
+
+                        <!-- Pipeline Log Output -->
+                        <div id="pipeline-log" class="mt-2 p-2.5 bg-black/40 border border-cyber-border/40 rounded font-mono text-[9px] text-emerald-300/80 h-[72px] overflow-y-auto leading-relaxed">
+                            <div>[ ... ] Waiting for pipeline trigger...</div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -431,7 +442,7 @@
                         <i data-lucide="phone" class="w-6 h-6"></i>
                     </div>
                     <span class="text-[11px] text-cyber-textMuted uppercase">Voice Call</span>
-                    <span class="text-xs font-bold text-white mt-1">+91-87689474000</span>
+                    <span class="text-xs font-bold text-white mt-1">+91-8768947400</span>
                 </a>
 
                 <a href="https://linkedin.com/in/aniketghosh09" target="_blank" class="p-5 bg-cyber-card border border-cyber-border rounded-xl hover:border-cyber-neonBlue/80 transition-all flex flex-col items-center text-center group">
@@ -458,15 +469,24 @@
     <script>
         lucide.createIcons();
 
-        // Cloud Pipeline Dashboard Automation Runner Engine
         const metaDuration = document.getElementById('pipeline-duration');
-        const metaId = document.getElementById('pipeline-id');
+            const metaId = document.getElementById('pipeline-id');
+            const logContainer = document.getElementById('pipeline-log');
+
+        function logMessage(msg) {
+            const time = new Date().toLocaleTimeString('en-US', { hour12: false });
+            const entry = document.createElement('div');
+            entry.textContent = `[${time}] ${msg}`;
+            logContainer.appendChild(entry);
+            logContainer.scrollTop = logContainer.scrollHeight;
+        }
 
         const pipelineTimeline = [
-            { id: 'stage-1', label: 'Stage 1: Initialize Workers', activeBadge: 'RUNNING', finalBadge: 'INITIALIZED', finalColor: 'border-cyber-neonBlue/40', delay: 1100, iconColor: 'text-cyber-neonBlue' },
-            { id: 'stage-2', label: 'Stage 2: E2E API Suites', activeBadge: 'RUNNING', finalBadge: 'PASSED (4/4)', finalColor: 'border-cyber-neonGreen/40', delay: 1800, iconColor: 'text-cyber-neonGreen' },
-            { id: 'stage-3', label: 'Stage 3: Regression Runtime Gate', activeBadge: 'RUNNING', finalBadge: 'STABLE (-42%)', finalColor: 'border-cyber-neonGreen/40', delay: 1400, iconColor: 'text-cyber-neonGreen' },
-            { id: 'stage-4', label: 'Stage 4: MobSF Security Gate', activeBadge: 'VERIFYING', finalBadge: 'SECURE (0 VULN)', finalColor: 'border-cyber-neonBlue/40', delay: 1500, iconColor: 'text-cyber-neonBlue' }
+            { id: 'stage-1', label: 'Stage 1: Build', activeBadge: 'BUILDING', finalBadge: 'BUILD OK', finalColor: 'border-emerald-500/40', delay: 1200, iconColor: 'text-emerald-400', logStart: 'Installing dependencies & compiling...', logComplete: 'Build completed successfully' },
+            { id: 'stage-2', label: 'Stage 2: Unit & Integration', activeBadge: 'RUNNING', finalBadge: 'PASSED', finalColor: 'border-emerald-500/40', delay: 1800, iconColor: 'text-emerald-400', logStart: 'Running unit & integration tests...', logComplete: 'All tests passed' },
+            { id: 'stage-3', label: 'Stage 3: E2E', activeBadge: 'RUNNING', finalBadge: 'PASSED', finalColor: 'border-emerald-500/40', delay: 1600, iconColor: 'text-emerald-400', logStart: 'Launching E2E browser tests...', logComplete: 'E2E suite passed' },
+            { id: 'stage-4', label: 'Stage 4: Security', activeBadge: 'SCANNING', finalBadge: 'ALL CLEAN', finalColor: 'border-emerald-500/40', delay: 1400, iconColor: 'text-emerald-400', logStart: 'Scanning dependencies & source code...', logComplete: 'No vulnerabilities detected' },
+            { id: 'stage-5', label: 'Stage 5: Deploy', activeBadge: 'DEPLOYING', finalBadge: 'DEPLOYED', finalColor: 'border-emerald-500/40', delay: 1400, iconColor: 'text-emerald-400', logStart: 'Deploying to production servers...', logComplete: 'Deployment complete' }
         ];
 
         function resetDashboardLayout() {
@@ -477,6 +497,7 @@
                 element.querySelector('.stage-badge').className = "stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-slate-800 text-slate-400";
                 element.querySelector('.stage-badge').textContent = "QUEUED";
             });
+            logContainer.innerHTML = '';
         }
 
         function triggerCloudPipeline() {
@@ -496,10 +517,10 @@
             function proceedStage() {
                 if (currentStageIndex >= pipelineTimeline.length) {
                     clearInterval(timerInterval);
-                    // Beautiful Completed Static Meta Display State
-                    metaDuration.innerHTML = `<span class="text-cyber-neonGreen font-bold flex items-center gap-1"><i data-lucide="check-circle" class="w-2.5 h-2.5"></i> PIPELINE SUCCESSFUL</span>`;
+                    logMessage('Pipeline completed successfully');
+                    metaDuration.innerHTML = `<span class="text-emerald-400 font-bold flex items-center gap-1"><i data-lucide="check-circle" class="w-2.5 h-2.5"></i> PIPELINE SUCCESSFUL</span>`;
                     lucide.createIcons();
-                    setTimeout(triggerCloudPipeline, 6000); // Hold success state dashboard layout before clean looping
+                    setTimeout(triggerCloudPipeline, 6000);
                     return;
                 }
 
@@ -508,18 +529,20 @@
                 const badge = node.querySelector('.stage-badge');
                 const wrapperIcon = node.querySelector('.stage-icon');
 
-                // Shift style layout markers into active executing operational frames
+                logMessage(setup.logStart);
+
                 node.className = `p-2 border border-yellow-500/40 bg-cyber-card/80 rounded flex items-center justify-between transition-all duration-300 shadow-[0_0_12px_rgba(234,179,8,0.1)]`;
                 badge.className = "stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-yellow-500/10 text-yellow-400 animate-pulse";
                 badge.textContent = setup.activeBadge;
                 wrapperIcon.className = "stage-icon text-yellow-400 animate-spin";
 
                 setTimeout(() => {
-                    // Turn current active element flags into finalized success state matrices
                     node.className = `p-2 border ${setup.finalColor} bg-cyber-bg/20 rounded flex items-center justify-between transition-all duration-300 shadow-none`;
-                    badge.className = `stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded ${currentStageIndex % 2 === 0 ? 'bg-cyber-neonBlue/10 text-cyber-neonBlue' : 'bg-cyber-neonGreen/10 text-cyber-neonGreen'}`;
+                    badge.className = `stage-badge text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-500/10 text-emerald-400`;
                     badge.textContent = setup.finalBadge;
                     wrapperIcon.className = `stage-icon ${setup.iconColor}`;
+
+                    logMessage(setup.logComplete);
 
                     currentStageIndex++;
                     proceedStage();
@@ -527,12 +550,12 @@
             }
 
             // Fire setup pipeline execution chain links
-            metaDuration.innerHTML = `<i data-lucide="clock" class="w-2.5 h-2.5 text-cyber-neonBlue"></i><span>Elapsed: 0.00s</span>`;
+            metaDuration.innerHTML = `<i data-lucide="clock" class="w-2.5 h-2.5 text-sky-400"></i><span>Elapsed: 0.00s</span>`;
             lucide.createIcons();
             proceedStage();
         }
 
-        // Initialize Continuous Deployment Cloud Status System on DOM ready
+        // Initialize Continuous Deployment Cloud Status System
         triggerCloudPipeline();
     </script>
 </body>
